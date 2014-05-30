@@ -19,7 +19,7 @@ Open app/scripts/app.js and edit the following line (11).
 ```javascript
 .constant('FIREBASE_URL', 'https://your_firebase_url.firebaseio.com/');
 ```
-Once your firebase URL is set up, you can rune the app using
+Once your firebase URL is set up, you can run the app using
 ```
 $ grunt serve
 ```
