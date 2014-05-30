@@ -5,7 +5,9 @@ An application based on the angular.js tutorial located at [http://www.thinkster
 1. [Node Package Manager](https://github.com/npm/npm)
 2. [Bower](https://github.com/bower/bower)
 3. [A Firebase Account](https://www.firebase.com/signup/?utm_medium=tutorial&utm_source=thinkster&campaign=angular_article). 
+
 #Installation
+
 ```
 $ git clone https://github.com/RichJTorres/angular-seed.git
 $ cd angular-seed/
