@@ -19,6 +19,11 @@ Open app/scripts/app.js and edit the following line (11).
 ```javascript
 .constant('FIREBASE_URL', 'https://your_firebase_url.firebaseio.com/');
 ```
+You will also need to enable email/password authentication in your firebase account:
+1. log into your firebase instance.
+2. click simple login on the left hand navigation menu.
+3. click the "Email & Password" option under Authentication Providers.
+4. click enabled.
 Once your firebase URL is set up, you can run the app using
 ```
 $ grunt serve
