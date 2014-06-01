@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller('AuthCtrl', function ($scope, $location, Auth) {
+app.controller('AuthCtrl', function ($scope, $location, Auth, User) {
   if (Auth.signedIn()) {
     $location.path('/');
   }
@@ -9,17 +9,17 @@ app.controller('AuthCtrl', function ($scope, $location, Auth) {
     $location.path('/');
   });
 
- $scope.login = function () {
+  $scope.login = function () {
     Auth.login($scope.user).then(function () {
-      $location.path('/')
+      $location.path('/');
     }, function(error) {
       $scope.error = error.toString();
     });
   };
 
   $scope.register = function () {
-    console.log('register');
     Auth.register($scope.user).then(function (authUser) {
+        User.create(authUser, $scope.user.username);
         Auth.login($scope.user);
         $location.path('/');
       }, function(error) {
