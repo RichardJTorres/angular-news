@@ -1,3 +1,4 @@
+/*jshint camelcase: false */
 'use strict';
  
 app.factory('User', function ($firebase, FIREBASE_URL, Auth, $rootScope) {
