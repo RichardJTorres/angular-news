@@ -21,6 +21,7 @@
   "globals": {
     "app" : false,
     "angular": false,
-    "Firebase" : false
+    "Firebase" : false,
+    "indent": 4
   }
 }
